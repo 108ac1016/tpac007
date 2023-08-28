@@ -952,7 +952,7 @@
       document.body.appendChild(btn);
       set_inner("btn99","跳到貢丸人製作畫面");
       set_size("btn99","5 * var(--vh)","20 * var(--vh)");
-      set_posi("btn99","90 * var(--vh)","calc((37 * var(--vw))) + 14 * var(--vh)");
+      set_posi("btn99","90 * var(--vh)","51 * var(--vw)");
     }
     function del_skip_btn(){
       document.body.removeChild(document.getElementById("btn99"));
@@ -1008,6 +1008,8 @@
       var div=document.createElement("div");
       div.setAttribute("id","qrcode1");
       document.body.appendChild(div);
+      set_size("qrcode1","calc((33 * var(--vh))","calc((33 * var(--vh))");
+      set_posi("qrcode1","calc(33 * var(--vh))","calc((50 * var(--vw)) - (16 * var(--vh)))");
       QRinfo[0]=colorcodeToRGB(c_skin)[0];
       QRinfo[1]=colorcodeToRGB(c_skin)[1];
       QRinfo[2]=colorcodeToRGB(c_skin)[2];
@@ -1026,6 +1028,7 @@
       QRinfo[15]=info_text;
       var qrcode=new QRCode(document.getElementById("qrcode1"));
       qrcode.makeCode(QRinfo.toString());
+
     }
 
     function del_qrcode(){
