@@ -952,7 +952,7 @@
       document.body.appendChild(btn);
       set_inner("btn99","跳到貢丸人製作畫面");
       set_size("btn99","5 * var(--vh)","20 * var(--vh)");
-      set_posi("btn99","90 * var(--vh)","calc((37 * var(--vw))) + 10 * var(--vh)");
+      set_posi("btn99","90 * var(--vh)","calc((37 * var(--vw))) + 14 * var(--vh)");
     }
     function del_skip_btn(){
       document.body.removeChild(document.getElementById("btn99"));
